@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/film_layout"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/main_func_selector"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_film"
+                android:text="电影"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/iv_film"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_film"
+                android:src="@drawable/menu_film"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/tv_layout"
+            android:layout_width="0dp"
+            android:background="@drawable/main_func_selector"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_tv"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/menu_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_tv"
+                android:text="电视剧"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/iv_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/main_func_selector"
+            android:id="@+id/live_layout"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_live"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/menu_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_live"
+                android:text="直播"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/iv_live"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/zy_layout"
+            android:layout_width="0dp"
+            android:background="@drawable/main_func_selector"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_zy"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/menu_zy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_zy"
+                android:text="综艺"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/iv_zy"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/dm_layout"
+            android:layout_width="0dp"
+            android:background="@drawable/main_func_selector"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_dm"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/menu_dm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_dm"
+                android:text="动漫"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/iv_dm"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/duanzi_layout"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/main_func_selector"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_duanzi"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/menu_funny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_duanzi"
+                android:text="搞笑"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/iv_duanzi"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

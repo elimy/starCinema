@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xmls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Theme.AppCompat.Light"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/film_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:navigationIcon="@drawable/back"
+            xmls:titleTextAppearance="@style/Toolbar.TitleText"
+            app:layout_scrollFlags="scroll|enterAlways"
+            />
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/filmTab"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                xmls:tl_textSelectColor="@color/black"
+                xmls:tl_indicator_color="@color/white"
+                xmls:tl_indicator_corner_radius="20dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                xmls:tl_indicator_style="BLOCK"
+                >
+
+            </com.flyco.tablayout.SlidingTabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/film_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmls:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+</android.support.design.widget.CoordinatorLayout>

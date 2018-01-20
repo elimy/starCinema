@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:xmls="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+
+                android:id="@+id/variety_toolbar"
+                android:background="@color/colorPrimary"
+                app:layout_scrollFlags="enterAlways|scroll"
+                xmls:titleTextAppearance="@style/Toolbar.TitleText"
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                tools:targetApi="lollipop">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            xmls:tl_iconVisible="false"
+            xmls:tl_indicator_corner_radius="1.5dp"
+            xmls:tl_textSelectColor="@color/colorPrimary"
+            xmls:tl_textUnselectColor="@color/black"
+            xmls:tl_indicator_height="3dp"
+            xmls:tl_underline_color="@color/black"
+            xmls:tl_textsize="13sp"
+            xmls:tl_indicator_style="NORMAL"
+            app:tl_indicator_color="@color/black"
+            android:id="@+id/variety_area_slidingTab"
+            >
+        </com.flyco.tablayout.SlidingTabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/variety_empty_viewPager"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+        </android.support.v4.view.ViewPager>
+
+        <com.aspsine.irecyclerview.IRecyclerView
+            app:refreshEnabled="true"
+            app:loadMoreEnabled="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/variety_IrecyclerView"
+            app:refreshHeaderLayout="@layout/irecyclerview_refresh_header"
+            app:loadMoreFooterLayout="@layout/irecyclerview_load_more_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.aspsine.irecyclerview.IRecyclerView>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.aspsine.irecyclerview.IRecyclerView
+        android:id="@+id/eqisode_recyclerView"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent" />
+
+<!--    <TextView
+
+        android:text="test"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+</LinearLayout>

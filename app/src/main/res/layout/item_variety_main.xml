@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/variety_root_layout"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:elevation="5dp"
+        app:cardCornerRadius="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="158dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/variety_poster"
+                android:src="@drawable/poster"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_last"
+                android:textSize="12sp"
+                android:layout_margin="3dp"
+                android:textColor="#fff"
+                android:background="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+        <TextView
+            android:text="经典传奇"
+            android:textSize="13sp"
+            android:ellipsize="end"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:id="@+id/variety_name"
+            android:textColor="#FFDA7C"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/variety_simple_desc"
+            android:text="古墓惊奇 神秋的王妃墓"
+            android:textSize="10sp"
+            android:ellipsize="end"
+            android:visibility="gone"
+            android:maxLines="2"
+            android:textColor="#FFDA7C"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>

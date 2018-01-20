@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mian_appbar_layout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/star_icon"
+                    android:src="@drawable/search_film"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="星空影院"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/star_icon"
+                    />
+                <ImageView
+                    android:id="@+id/btn_message"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/home_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/main_viewPager"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/mian_appbar_layout"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <LinearLayout
+            android:id="@+id/radios_group"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingTop="3dp"
+            android:background="@color/gray_btn_bg_color"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/radio_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/tab_selector_color"
+            android:textSize="12sp"
+            android:checked="true"
+            android:drawableTop="@drawable/main_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="搜索"
+            android:textSize="12sp"
+            android:textColor="@drawable/tab_selector_color"
+            android:drawableTop="@drawable/search_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_sale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="发现"
+            android:textSize="12sp"
+            android:textColor="@drawable/tab_selector_color"
+            android:drawableTop="@drawable/find_selector"
+            />
+        <RadioButton
+            android:id="@+id/radio_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我的"
+            android:textSize="12sp"
+            android:textColor="@drawable/tab_selector_color"
+            android:drawableTop="@drawable/me_selector"
+            />
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

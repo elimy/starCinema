@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/tv_root_layout"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        app:cardCornerRadius="2dp"
+        android:layout_height="158dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/tv_poster"
+                android:src="@drawable/poster"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_Number"
+                android:text="30集全"
+                android:textSize="12sp"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:textColor="#fff"
+                android:background="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:text="8.0"
+                android:textSize="16sp"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:textColor="#FFDA7C"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:text="使徒行者2"
+        android:textSize="13sp"
+        android:ellipsize="end"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:id="@+id/tv_name"
+        android:textColor="#FFDA7C"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_actor"
+        android:text="主演：苗侨伟  陈豪  宣萱"
+        android:textSize="10sp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="#FFDA7C"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
