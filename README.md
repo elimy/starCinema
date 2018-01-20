@@ -10,7 +10,7 @@
     3.其他更多...
 
 #开源第三方库
-"  compile 'com.android.support:appcompat-v7:25.3.1'
+`   compile 'com.android.support:appcompat-v7:25.3.1'
      compile 'com.android.support:design:25.3.1'
      testCompile 'junit:junit:4.12'
      compile 'com.android.support:percent:25.3.1'
@@ -31,7 +31,7 @@
      compile 'com.github.bumptech.glide:glide:3.7.0'
      //FlycoTabLayout
      compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
-     compile files('libs/tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025.jar')"
+     compile files('libs/tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025.jar')`
 
 #声明
 
